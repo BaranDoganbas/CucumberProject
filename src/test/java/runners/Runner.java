@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
         dryRun = false,
-        tags = "@parameterizing1"
+        tags = "@amazon_search"
 )
 public class Runner {
 }

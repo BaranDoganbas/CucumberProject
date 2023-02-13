@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import pages.AmazonPage;
 import pages.GooglePage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -12,6 +13,7 @@ import utilities.Driver;
 public class GoogleStepDefinitions {
 
     GooglePage googlePage = new GooglePage();
+    AmazonPage amazonPage = new AmazonPage();
 
     @Given("User is on the google home page")
     public void user_is_on_the_google_home_page() {
@@ -52,5 +54,14 @@ public class GoogleStepDefinitions {
     @Then("verify page title contains {string}")
     public void verify_page_title_contains(String string) {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
+    }
+    @Given("User is on the amazon home page")
+    public void user_is_on_the_amazon_home_page() {
+        Driver.getDriver().get(ConfigReader.getProperty("amazon_url"));
+    }
+
+    @When("user searches for {string} on amazon")
+    public void user_searches_for_on_amazon(String string) {
+        amazonPage.searchBox.sendKeys(string + Keys.ENTER);
     }
 }
