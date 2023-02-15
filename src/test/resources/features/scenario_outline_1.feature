@@ -10,10 +10,10 @@ Feature: search_feature
     Then close the application
 
     Examples: test_data
-      | search_item |  |
-      | tesla       |  |
-      | nio         |  |
-      | mercedes    |  |
-      | bmw         |  |
-      | lexus       |  |
+      | search_item |
+      | tesla       |
+      | nio         |
+      | mercedes    |
+      | bmw         |
+      | lexus       |
 
