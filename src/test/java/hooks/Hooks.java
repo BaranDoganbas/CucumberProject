@@ -33,9 +33,10 @@ public class Hooks {
     public void setUpSmoothScenarios() {
         System.out.println("RUN FOR ONLY SMOKE TEST SCENARIOS");
     }
-//    This After hooks ONLY RUNS for @smoke_tests TAGGED SCENARIOS
+
+    //    This After hooks ONLY RUNS for @smoke_tests TAGGED SCENARIOS
     @After("@smoke_tests")
-    public void tearDownSmokeScenarios(){
+    public void tearDownSmokeScenarios() {
         System.out.println("RUN FOR ONLY SMOKE TEST SCENARIOS");
     }
 

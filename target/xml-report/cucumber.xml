@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="61.868" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="excel_login_feature" name="TC_customer_credentials_test" time="61.737">
+<system-out><![CDATA[
+Given user tries to login as "customer".....................................passed
+Then verify the application login is successful.............................passed
+Then capture the screenshot.................................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

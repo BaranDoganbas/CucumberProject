@@ -30,10 +30,12 @@ public class LoginStepDefinitions {
 
 //        2. GET DATA AS LIST<MAP<STRING,STRING>>
         List<Map<String, String>> customerData = credentials.asMaps(String.class, String.class);
-//        System.out.println(customerData);
-        customerData.forEach(each -> loginPage.username.sendKeys(each.get("username")));
-        customerData.forEach(each -> loginPage.password.sendKeys(each.get("password")));
-        loginPage.loginButton.click();
+        System.out.println(customerData);
+        customerData.forEach(each -> {
+            loginPage.username.sendKeys(each.get("username"));
+            loginPage.password.sendKeys(each.get("password"));
+            loginPage.loginButton.click();
+        });
     }
 
     @Then("verify the application login is successful")
