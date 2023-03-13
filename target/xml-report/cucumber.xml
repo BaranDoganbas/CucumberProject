@@ -1,10 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="61.868" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="excel_login_feature" name="TC_customer_credentials_test" time="61.737">
+<testsuite name="Cucumber" time="16.853" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.1" time="4.953">
 <system-out><![CDATA[
-Given user tries to login as "customer".....................................passed
-Then verify the application login is successful.............................passed
-Then capture the screenshot.................................................passed
+Given user is on "https://editor.datatables.net" page.......................passed
+And user clicks on the New button...........................................passed
+And user enters the first name "john".......................................passed
+And user enters the last name "smith".......................................passed
+And user enters the position "tester".......................................passed
+And user enters the office "NYC"............................................passed
+And user enters the extension "2134"........................................passed
+And user enters the start date "2023-02-25".................................passed
+And user enters the salary "80000"..........................................passed
+And click on create button..................................................passed
+And search for the first name "john"........................................passed
+Then verify the name field contains the first name "john"...................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.2" time="3.011">
+<system-out><![CDATA[
+Given user is on "https://editor.datatables.net" page.......................passed
+And user clicks on the New button...........................................passed
+And user enters the first name "sam"........................................passed
+And user enters the last name "walton"......................................passed
+And user enters the position "businessman"..................................passed
+And user enters the office "LA".............................................passed
+And user enters the extension "5262"........................................passed
+And user enters the start date "2021-02-21".................................passed
+And user enters the salary "2000000"........................................passed
+And click on create button..................................................passed
+And search for the first name "sam".........................................passed
+Then verify the name field contains the first name "sam"....................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.3" time="2.959">
+<system-out><![CDATA[
+Given user is on "https://editor.datatables.net" page.......................passed
+And user clicks on the New button...........................................passed
+And user enters the first name "nancy"......................................passed
+And user enters the last name "brown".......................................passed
+And user enters the position "developer"....................................passed
+And user enters the office "Dallas".........................................passed
+And user enters the extension "2346"........................................passed
+And user enters the start date "2021-02-26".................................passed
+And user enters the salary "850000".........................................passed
+And click on create button..................................................passed
+And search for the first name "nancy".......................................passed
+Then verify the name field contains the first name "nancy"..................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.4" time="3.032">
+<system-out><![CDATA[
+Given user is on "https://editor.datatables.net" page.......................passed
+And user clicks on the New button...........................................passed
+And user enters the first name "george".....................................passed
+And user enters the last name "bush"........................................passed
+And user enters the position "politician"...................................passed
+And user enters the office "Dallas".........................................passed
+And user enters the extension "9931"........................................passed
+And user enters the start date "2021-02-24".................................passed
+And user enters the salary "9850000"........................................passed
+And click on create button..................................................passed
+And search for the first name "george"......................................passed
+Then verify the name field contains the first name "george".................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.5" time="2.578">
+<system-out><![CDATA[
+Given user is on "https://editor.datatables.net" page.......................passed
+And user clicks on the New button...........................................passed
+And user enters the first name "barry"......................................passed
+And user enters the last name "allen".......................................passed
+And user enters the position "unknown"......................................passed
+And user enters the office "Central"........................................passed
+And user enters the extension "2103"........................................passed
+And user enters the start date "2021-02-23".................................passed
+And user enters the salary "1000000"........................................passed
+And click on create button..................................................passed
+And search for the first name "barry".......................................passed
+Then verify the name field contains the first name "barry"..................passed
 Then close the application..................................................passed
 ]]></system-out>
 </testcase>

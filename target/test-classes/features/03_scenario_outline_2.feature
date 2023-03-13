@@ -1,7 +1,7 @@
 @data_tables
 Feature: data_tables
 
-  Scenario Outline: TC_Create_And verify "<firstname>" the test data creation
+  Scenario Outline: TC_Create_And verify <firstname> the test data creation
 
 #    Creating a reusable step that accept url and goes to that url
     Given user is on "https://editor.datatables.net" page
