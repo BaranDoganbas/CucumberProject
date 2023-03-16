@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="16.853" tests="5" skipped="0" failures="0" errors="0">
-<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.1" time="4.953">
+<testsuite name="Cucumber" time="16.476" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.1" time="4.603">
 <system-out><![CDATA[
 Given user is on "https://editor.datatables.net" page.......................passed
 And user clicks on the New button...........................................passed
@@ -17,7 +17,7 @@ Then verify the name field contains the first name "john"...................pass
 Then close the application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.2" time="3.011">
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.2" time="2.583">
 <system-out><![CDATA[
 Given user is on "https://editor.datatables.net" page.......................passed
 And user clicks on the New button...........................................passed
@@ -34,7 +34,7 @@ Then verify the name field contains the first name "sam"....................pass
 Then close the application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.3" time="2.959">
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.3" time="2.742">
 <system-out><![CDATA[
 Given user is on "https://editor.datatables.net" page.......................passed
 And user clicks on the New button...........................................passed
@@ -51,7 +51,7 @@ Then verify the name field contains the first name "nancy"..................pass
 Then close the application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.4" time="3.032">
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.4" time="2.616">
 <system-out><![CDATA[
 Given user is on "https://editor.datatables.net" page.......................passed
 And user clicks on the New button...........................................passed
@@ -68,7 +68,7 @@ Then verify the name field contains the first name "george".................pass
 Then close the application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.5" time="2.578">
+<testcase classname="data_tables" name="TC_Create_And verify &lt;firstname&gt; the test data creation - test_data - Example #1.5" time="3.753">
 <system-out><![CDATA[
 Given user is on "https://editor.datatables.net" page.......................passed
 And user clicks on the New button...........................................passed

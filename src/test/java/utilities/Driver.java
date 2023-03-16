@@ -12,14 +12,15 @@ import java.time.Duration;
 public class Driver {
     //    Driver.getDriver(); -> driver
     private static WebDriver driver;
-
     //    getDriver() is used to instantiate the driver object
     public static WebDriver getDriver() {
         if (driver == null) {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
+                    ChromeOptions co = new ChromeOptions();
+                    co.addArguments("--remote-allow-origins=*");
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(co);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
