@@ -197,7 +197,6 @@ public class ExcelStepDefinitions {
             ReusableMethods.getScreenshot("screenshot");
     }
 }
-
 3. Note: We copied the existing JAVA code from TestNG
     Because the JAVA sections are the same
     We also copied some of the page objects from TestNG
